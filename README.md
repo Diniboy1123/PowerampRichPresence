@@ -16,7 +16,7 @@ This app does exactly that. It listens for track changes in Poweramp and sends t
 
 ## How does it resolve Spotify titles from Poweramp metadata?
 
-I get some details such as song title and artist from Poweramp's intents. I then use the [Spotify API](https://developer.spotify.com/documentation/web-api/reference/tracks/get-track/) using a cached anonymous token to get the Spotify ID of the track. These IDs are then cached locally (for up to 500 entries). When I send the intents to Discord, I include the Spotify ID in the extras. Discord then resolves the ID to the actual track details and displays them.
+I get some details such as song title and artist from Poweramp's intents. I then use the [Spotify API](https://developer.spotify.com/documentation/web-api/reference/search) using a cached anonymous token to get the Spotify ID of the track. These IDs are then cached locally (for up to 500 entries). When I send the intents to Discord, I include the Spotify ID in the extras. Discord then resolves the ID to the actual track details and displays them.
 
 ## Limitations
 
