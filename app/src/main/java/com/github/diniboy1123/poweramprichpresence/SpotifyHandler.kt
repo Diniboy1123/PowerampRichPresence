@@ -178,7 +178,7 @@ class SpotifyHandler(private val context: Context) {
         context.sendBroadcast(metadataIntent)
     }
 
-    @Suppress("SpellCheckingInspection")
+    @Suppress("SpellCheckingInspection")        // Suppress spell check inspection for the broadcast name
     private fun sendSpotifyPlaybackStateChanged(isPlaying: Boolean, position: Int) {
         Log.i(TAG, "Sending playback state changed broadcast with isPlaying: $isPlaying, position: $position")
         val playbackStateIntent = Intent("com.spotify.music.playbackstatechanged").apply {
